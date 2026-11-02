@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Forgotten Dungeon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Forgotten Dungeon</h1>
+    <p>Explore the rooms, collect items, and find a way out.</p>
+  </header>
+  <main>
+    <section class="game-box">
+      <div class="top-bar"><span id="scene-label">Spawn Room</span><span id="progress">6 rooms to explore</span></div>
+      <img id="scene-art" class="scene-art" src="images/spawn.svg" alt="A stone dungeon room">
+      <h2 id="scene-title">Spawn Room</h2>
+      <p id="scene-description"></p>
+      <p id="message" class="message" aria-live="polite"></p>
+      <div id="actions" class="actions"></div>
+    </section>
+    <aside class="inventory">
+      <h3>Your Inventory</h3>
+      <ul id="inventory-list"><li>Empty</li></ul>
+      <h3>Exploration Notes</h3>
+      <ul id="journal-list"><li>Find a way out of the dungeon.</li></ul>
+      <p class="hint">Your choices matter! Some rooms are dangerous. You can return to earlier rooms and use items you find.</p>
+      <button id="restart" class="restart">Start Over</button>
+    </aside>
+  </main>
+  <footer>Interactive Discovery Project Jetson Eng</footer>
+  <script src="script.js"></script>
+</body>
+</html>

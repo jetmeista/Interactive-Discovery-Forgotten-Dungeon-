@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #252329; color: #e8e3d7; }
+header { text-align: center; background: #17161b; color: #f5ead2; padding: 23px 12px; border-bottom: 3px solid #82643f; }
+header h1 { margin: 0 0 6px; font-size: 30px; }
+header p { margin: 0; color: #c4b8a7; font-size: 14px; }
+main { max-width: 1050px; margin: 26px auto; padding: 0 16px; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+.game-box, .inventory { background: #353239; border: 1px solid #5a5150; border-radius: 6px; padding: 19px; }
+.top-bar { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: #c5b398; margin-bottom: 12px; }
+.scene-art { width: 100%; height: 275px; object-fit: cover; display: block; border-radius: 4px; background: #14151a; border: 1px solid #52473f; }
+h2 { font-size: 23px; margin: 17px 0 8px; color: #f0d5a3; }
+#scene-description { line-height: 1.65; font-size: 15px; min-height: 72px; white-space: pre-line; }
+.message { color: #f3dfb8; background: #4d4239; border-left: 4px solid #c39b55; padding: 10px; line-height: 1.5; }
+.message:empty { display: none; }
+.actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+button { background: #745236; color: #fff5e8; border: 1px solid #956f49; border-radius: 4px; padding: 11px 13px; cursor: pointer; font-family: inherit; font-size: 14px; }
+button:hover { background: #946943; }
+button:focus-visible { outline: 2px solid #e9c58e; outline-offset: 2px; }
+button:disabled { background: #575258; border-color: #666067; color: #b8b0af; cursor: default; }
+.inventory h3 { color: #efd3a7; font-size: 17px; margin: 5px 0 9px; }
+.inventory ul { margin: 0 0 18px; padding-left: 21px; font-size: 14px; line-height: 1.7; }
+.hint { background: #423d40; padding: 12px; font-size: 13px; line-height: 1.5; border-left: 3px solid #846443; }
+.restart { background: #5b565b; border-color: #80777d; }
+footer { color: #aea49c; text-align: center; padding: 12px; font-size: 12px; }
+@media (max-width: 700px) { main { grid-template-columns: 1fr; margin-top: 16px; } .scene-art { height: 210px; } header h1 { font-size: 25px; } }
